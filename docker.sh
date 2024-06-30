@@ -7,6 +7,6 @@ docker run -d \
     -e MYSQL_USER=expense \
     -e MYSQL_DATABASE=transactions \
     -e MYSQL_PASSWORD=ExpenseApp@1 \
-    -v $(pwd)/scripts/*.sql:/docker-entrypoint-initdb.d \
+    -v $(pwd)/scripts:/docker-entrypoint-initdb.d \
     -p 3306:3306 \
     mysql:8.0
