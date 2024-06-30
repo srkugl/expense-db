@@ -1,6 +1,6 @@
 #!/bin/bash
 docker run -d \
-    --rm \
+    --rm
     --network expense \
     --name expense-mysql \
     -e MYSQL_ROOT_PASSWORD=ExpenseApp@1 \
